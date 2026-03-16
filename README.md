@@ -42,7 +42,7 @@ checkpoint versioning, and multi-architecture build support.
 **Languages:** Python · C · C++
 **ML/DL:** PyTorch · scikit-learn · Albumentations · Ollama
 **Embedded:** STM32 HAL/LL · FreeRTOS · UART · CAN · SPI · ADC
-**Systems:** Linux · systemd · UNIX sockets · ROS2
+**Systems:** Linux · systemd · UNIX sockets
 
 ---
 
