@@ -48,4 +48,4 @@ checkpoint versioning, and multi-architecture build support.
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/chaitanyaparate) · [Kaggle](https://www.kaggle.com/chaitanyaparate)
+[LinkedIn](https://www.linkedin.com/in/chaitanyaparate)
