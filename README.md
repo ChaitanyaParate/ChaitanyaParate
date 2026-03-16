@@ -9,7 +9,7 @@ Building at the intersection of embedded systems and deep learning.
 
 **[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
 Local-first desktop AI daemon. systemd user service, UNIX socket IPC, streaming LLM
-inference via Ollama, offline/online switching. Built in Python on Linux.
+inference via Ollama, offline/online switching.
 
 **[SE-Attention-Half-UNet](https://github.com/ChaitanyaParate/SE-Attention-Half-UNet)**
 Custom medical image segmentation model. Attention gates, Squeeze-and-Excitation blocks,
