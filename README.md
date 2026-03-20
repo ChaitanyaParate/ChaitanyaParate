@@ -33,8 +33,9 @@ Built for Team Vegapod, represented MIT-WPU at European Hyperloop Week 2025.
 
 ## Open Source
 
-- **[metatensor/metatrain](https://github.com/metatensor/metatrain)** - Fixed edge case where
-  zero-sized validation splits caused failures in training pipelines ·
+- **[metatensor/metatrain](https://github.com/metatensor/metatrain)** - ML library for
+  atomistic simulations in computational chemistry. Fixed edge case where zero-sized
+  validation splits caused failures in training pipelines ·
   [PR #1003](https://github.com/metatensor/metatrain/pull/1003)
 
 ---
