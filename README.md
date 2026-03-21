@@ -9,7 +9,7 @@ Open to ML/AI research internships.
 
 **[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
 Local-first desktop AI daemon for Linux. Runs as a systemd user service with UNIX socket
-IPC and HTTP API. Supports streaming LLM inference via Ollama with offline/online switching.
+IPC. Supports streaming LLM inference via Ollama with offline/online switching.
 
 **[SE-Attention-Half-UNet](https://github.com/ChaitanyaParate/SE-Attention-Half-UNet)**
 Custom medical image segmentation model built for polyp detection. Combines attention gates
