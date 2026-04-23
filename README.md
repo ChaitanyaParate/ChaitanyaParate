@@ -1,11 +1,17 @@
 # Chaitanya Parate
 B.Tech Computer Science · MIT-WPU, Pune · Expected 2027
-Medical imaging, embedded firmware, local AI systems.
+Robotics & RL research, medical imaging, embedded firmware, local AI systems.
 Open to ML/AI research internships.
 
 ---
 
 ## Work
+
+**[Morphology-Generalizable Robotic Control](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)**
+GNN-based locomotion policy trained with PPO on a 12-DOF quadruped. Zero-shot transferred to
+an 18-DOF hexapod with no retraining — same 29,572 weights, different graph topology.
+LLM planner (Llama 3.1 8B) generates high-level commands; GNN executes them at 200 Hz via ROS2.
+Targeting ICRA/CoRL.
 
 **[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
 Local-first desktop AI daemon for Linux. Runs as a systemd user service with UNIX socket
@@ -43,7 +49,8 @@ Built for Team Vegapod, represented MIT-WPU at European Hyperloop Week 2025.
 ## Stack
 
 **Languages:** Python · C · C++
-**ML/DL:** PyTorch · scikit-learn · Albumentations · Ollama
+**ML/DL:** PyTorch · PyTorch Geometric · scikit-learn · Albumentations · Ollama
+**Robotics:** PyBullet · ROS2 · GNN · PPO · Zero-Shot Transfer
 **Embedded:** STM32 HAL/LL · FreeRTOS · UART · CAN · SPI · ADC · DMA
 **Systems:** Linux · systemd · UNIX sockets
 
