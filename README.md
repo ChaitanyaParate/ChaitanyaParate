@@ -7,10 +7,21 @@ Open to ML/AI research internships.
 
 ## Work
 
-**[Morphology-Generalizable Robotic Control](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)**
-GNN-based locomotion policy trained with PPO on a 12-DOF quadruped. Zero-shot transferred to
-an 18-DOF hexapod with no retraining — same 29,572 weights, different graph topology.
-LLM planner (Llama 3.1 8B) generates high-level commands; GNN executes them at 200 Hz via ROS2.
+**[Heterogeneous GNN Morphology Transfer](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)**
+Constrained zero-shot morphology transfer for legged locomotion using heterogeneous graph neural networks, PPO, ROS2/Gazebo deployment, YOLO-based perception, and LLM-guided navigation.
+
+System components:
+- Heterogeneous GNN locomotion policy
+- YOLOv8 + depth-based vision node
+- LLM planner node (Llama 3.1 / Qwen via Ollama)
+- ROS2 skill translator and navigation stack
+- Cross-morphology URDF graph execution pipeline
+
+Key results:
+- Quadruped → Hexapod zero-shot transfer
+- 3.8× reward improvement after 500K-step fine-tuning
+- ROS2/Gazebo deployment with 200 Hz control
+- Cross-morphology execution on ANYmal, Go1, and AlienGo URDFs
 
 **[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
 Local-first desktop AI daemon for Linux. Runs as a systemd user service with UNIX socket
