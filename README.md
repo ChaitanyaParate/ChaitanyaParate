@@ -11,7 +11,6 @@ Open to ML/AI research internships.
 GNN-based locomotion policy trained with PPO on a 12-DOF quadruped. Zero-shot transferred to
 an 18-DOF hexapod with no retraining — same 29,572 weights, different graph topology.
 LLM planner (Llama 3.1 8B) generates high-level commands; GNN executes them at 200 Hz via ROS2.
-Targeting ICRA/CoRL.
 
 **[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
 Local-first desktop AI daemon for Linux. Runs as a systemd user service with UNIX socket
