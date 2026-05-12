@@ -1,71 +1,59 @@
 # Chaitanya Parate
-B.Tech Computer Science · MIT-WPU, Pune · Expected 2027
-Robotics & RL research, medical imaging, embedded firmware, local AI systems.
+
+B.Tech Computer Science (AI & Data Science) · MIT-WPU, Pune · 2027  
+Building at the intersection of robotics, deep learning, and systems engineering.  
 Open to ML/AI research internships.
 
 ---
 
-## Work
+## Projects
 
-**[Heterogeneous GNN Morphology Transfer](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)**
-Constrained zero-shot morphology transfer for legged locomotion using heterogeneous graph neural networks, PPO, ROS2/Gazebo deployment, YOLO-based perception, and LLM-guided navigation.
+### [Heterogeneous GNN Morphology Transfer](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)
+Zero-shot morphology transfer for legged locomotion using heterogeneous GNNs trained via PPO, with YOLOv8 perception and LLM-guided navigation on ROS2/Gazebo.
 
-System components:
-- Heterogeneous GNN locomotion policy
-- YOLOv8 + depth-based vision node
-- LLM planner node (Llama 3.1 / Qwen via Ollama)
-- ROS2 skill translator and navigation stack
-- Cross-morphology URDF graph execution pipeline
+- Quadruped to hexapod transfer without retraining
+- 3.8x reward improvement after 500K-step fine-tuning
+- Tested across ANYmal, Go1, and AlienGo URDFs at 200 Hz
 
-Key results:
-- Quadruped → Hexapod zero-shot transfer
-- 3.8× reward improvement after 500K-step fine-tuning
-- ROS2/Gazebo deployment with 200 Hz control
-- Cross-morphology execution on ANYmal, Go1, and AlienGo URDFs
+### [SE-Attention Half-UNet](https://github.com/ChaitanyaParate/SE-Attention-Half-UNet)
+Polyp segmentation model combining attention gates and SE blocks with BCE-Dice loss. Evaluated on Kvasir-SEG. Dice: 0.9436.
 
-**[DeskAI](https://github.com/ChaitanyaParate/Deskai)**
-Local-first desktop AI daemon for Linux. Runs as a systemd user service with UNIX socket
-IPC. Supports streaming LLM inference via Ollama with offline/online switching.
+### [DeskAI](https://github.com/ChaitanyaParate/Deskai)
+Local-first Linux desktop AI daemon. Persistent daemon with UNIX socket IPC, X11/OCR context tracking, and streaming LLM inference via Ollama with online fallback.
 
-**[SE-Attention-Half-UNet](https://github.com/ChaitanyaParate/SE-Attention-Half-UNet)**
-Custom medical image segmentation model built for polyp detection. Combines attention gates
-and Squeeze-and-Excitation blocks with BCE-Dice hybrid loss and AMP training.
-Evaluated on the Kvasir-SEG dataset.
+- Intent router dispatches to typed executors (summarize, explain_error, search)
+- Fault-tolerant streaming pipeline with full daemon-client lifecycle decoupling
+- Internet-aware backend switching without daemon restart
 
-**[ResNet50 From Scratch](https://github.com/ChaitanyaParate/ResNet50-From-Scratch-Pytorch-Imagenette)**
-Full ResNet-50 in PyTorch without torchvision, trained on Imagenette. Wired to a live
-ESP32-CAM stream for real-time inference via OpenCV.
+### [stm32-hyperloop-embedded](https://github.com/ChaitanyaParate/stm32-hyperloop-embedded)
+STM32 firmware in C for Team Vegapod. Custom Bluetooth bootloader, FreeRTOS BMS/VCU braking, 3-phase inverter PWM, CAN bus. Represented MIT-WPU at European Hyperloop Week 2025.
 
-**[Brain Tumor Classification](https://github.com/ChaitanyaParate/Modified-Half-UNet-for-Medical-Image-Classification)**
-Encoder-only Half-UNet repurposed for binary MRI classification. Achieved ~98% accuracy
-on the Kaggle brain tumor dataset.
-
-**[stm32-hyperloop-embedded](https://github.com/ChaitanyaParate/stm32-hyperloop-embedded)**
-STM32 firmware written in C for Hyperloop pod development. Implements a custom Bluetooth
-bootloader, FreeRTOS BMS/VCU braking system, 3-phase inverter PWM control, and CAN bus.
-Built for Team Vegapod, represented MIT-WPU at European Hyperloop Week 2025.
+### Other
+[ResNet-50 from scratch](https://github.com/ChaitanyaParate/ResNet50-From-Scratch-Pytorch-Imagenette) (86.63% on Imagenette, live ESP32-CAM inference) · [Brain Tumor MRI Classification](https://github.com/ChaitanyaParate/Modified-Half-UNet-for-Medical-Image-Classification) (98% accuracy, encoder-only Half-UNet)
 
 ---
 
 ## Open Source
 
-- **[metatensor/metatrain](https://github.com/metatensor/metatrain)** - ML library for
-  atomistic simulations in computational chemistry. Fixed edge case where zero-sized
-  validation splits caused failures in training pipelines ·
-  [PR #1003](https://github.com/metatensor/metatrain/pull/1003)
+**[metatensor/metatrain](https://github.com/metatensor/metatrain)** · Fixed zero-sized validation split edge case in ML training pipelines. [PR #1003](https://github.com/metatensor/metatrain/pull/1003) merged January 2026.
 
 ---
 
 ## Stack
 
-**Languages:** Python · C · C++
-**ML/DL:** PyTorch · PyTorch Geometric · scikit-learn · Albumentations · Ollama
-**Robotics:** PyBullet · ROS2 · GNN · PPO · Zero-Shot Transfer
-**Embedded:** STM32 HAL/LL · FreeRTOS · UART · CAN · SPI · ADC · DMA
-**Systems:** Linux · systemd · UNIX sockets
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![PyTorch Geometric](https://img.shields.io/badge/PyG-3C2179?style=flat&logo=pytorch&logoColor=white)
+![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat&logo=ros&logoColor=white)
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 
 ---
 
-## Contact
+![Chaitanya's GitHub stats](https://github-readme-stats.vercel.app/api?username=ChaitanyaParate&show_icons=true&theme=default&hide_border=true)
+
+---
 
 [LinkedIn](https://www.linkedin.com/in/chaitanyaparate) · paratechaitanya5@gmail.com
