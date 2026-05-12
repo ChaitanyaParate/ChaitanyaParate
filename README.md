@@ -52,8 +52,6 @@ STM32 firmware in C for Team Vegapod. Custom Bluetooth bootloader, FreeRTOS BMS/
 
 ---
 
-![Chaitanya's GitHub stats](https://github-readme-stats.vercel.app/api?username=ChaitanyaParate&show_icons=true&theme=default&hide_border=true)
-
 ---
 
 [LinkedIn](https://www.linkedin.com/in/chaitanyaparate) · paratechaitanya5@gmail.com
