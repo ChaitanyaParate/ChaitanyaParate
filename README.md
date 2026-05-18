@@ -15,7 +15,7 @@ Zero-shot locomotion policy transfer across robot morphologies using a 31,582-pa
 - **Zero-shot quadruped → hexapod transfer** (12-DOF → 18-DOF): 106 ± 25 reward, ~47 steps survival. MLP hard-fails with RuntimeError on any unseen morphology — fixed-input-dim structural limitation
 - **500K-step fine-tuning**: 3.8× reward gain (110 → 416 ± 114), survival 47 → 193 steps
 - **85% fewer parameters** than MLP baseline (31,582 vs 210,457), while MLP scores higher in-distribution only — GNN trades peak reward for architectural generalization
-- **Terrain robustness** (zero-shot, no terrain training): 95% success at 5° slope, 0% at 10° — honest boundary documented
+- **Terrain robustness** (zero-shot, no terrain training): 95% success at 5° slope, 0% at 10°
 - Deployed at 200 Hz with yaw-rate PI correction (HAA joint offset) to eliminate circular drift from training bias
 - LLM planning layer: Qwen 2.5 7B via Ollama, natural language → skill → GNN → joint commands, fully on-device
 
