@@ -8,12 +8,16 @@ Open to ML/AI research internships.
 
 ## Projects
 
-### [Heterogeneous GNN Morphology Transfer](https://github.com/ChaitanyaParate/morphology-generalizable-llm-robot-control)
-Zero-shot morphology transfer for legged locomotion using heterogeneous GNNs trained via PPO, with YOLOv8 perception and LLM-guided navigation on ROS2/Gazebo.
+### [Heterogeneous GNN Morphology Transfer](https://github.com/ChaitanyaParate/hetero-gnn-morphology-transfer) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20187567-blue.svg)](https://doi.org/10.5281/zenodo.20187567)
 
-- Quadruped to hexapod transfer without retraining
-- 3.8x reward improvement after 500K-step fine-tuning
-- Tested across ANYmal, Go1, and AlienGo URDFs at 200 Hz
+Zero-shot locomotion policy transfer across robot morphologies using a 31,582-parameter heterogeneous GNN (GATv2Conv + PPO), with YOLOv8 perception and LLM-guided navigation deployed on ROS2 Jazzy + Gazebo.
+
+- **Zero-shot quadruped → hexapod transfer** (12-DOF → 18-DOF): 106 ± 25 reward, ~47 steps survival. MLP hard-fails with RuntimeError on any unseen morphology — fixed-input-dim structural limitation
+- **500K-step fine-tuning**: 3.8× reward gain (110 → 416 ± 114), survival 47 → 193 steps
+- **85% fewer parameters** than MLP baseline (31,582 vs 210,457), while MLP scores higher in-distribution only — GNN trades peak reward for architectural generalization
+- **Terrain robustness** (zero-shot, no terrain training): 95% success at 5° slope, 0% at 10° — honest boundary documented
+- Deployed at 200 Hz with yaw-rate PI correction (HAA joint offset) to eliminate circular drift from training bias
+- LLM planning layer: Qwen 2.5 7B via Ollama, natural language → skill → GNN → joint commands, fully on-device
 
 ### [SE-Attention Half-UNet](https://github.com/ChaitanyaParate/SE-Attention-Half-UNet)
 Polyp segmentation model combining attention gates and SE blocks with BCE-Dice loss. Evaluated on Kvasir-SEG. Dice: 0.9436.
