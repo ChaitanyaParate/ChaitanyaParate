@@ -2,14 +2,14 @@
 
 B.Tech Computer Science (AI & Data Science) · MIT-WPU, Pune · 2027  
 Building at the intersection of robotics, deep learning, and systems engineering.  
-Currently: Research Intern, CAIR (IIT Mandi) — RL-based quadruped locomotion. Open to ML/AI and robotics research internships from July 2027.
+Currently: Research Intern, CAIR (IIT Mandi) — RL-based quadruped locomotion. Open to ML/AI and robotics research internships from January 2027.
 
 ---
 
 ## Current
 
 ### RL Quadruped Locomotion — CAIR, IIT Mandi
-Research internship (Jul–Dec 2026) under Dr. Akash Kumar, working toward a research paper. RL locomotion pipeline for the Hiwonder ROSpug quadruped: a Hopf-CPG-structured policy first trained in MuJoCo (PPO/LSTM), now ported to NVIDIA Isaac Lab for massively parallel GPU training (8,192 simultaneous environments via PhysX), with the sim-to-real path continuing on to physical deployment on Jetson hardware.
+Research internship (Jul–Dec 2026), working toward a research paper. RL locomotion pipeline for the Hiwonder ROSpug quadruped: a Hopf-CPG-structured policy first trained in MuJoCo (PPO/LSTM), now ported to NVIDIA Isaac Lab for massively parallel GPU training (8,192 simultaneous environments via PhysX), with the sim-to-real path continuing on to physical deployment on Jetson hardware.
 
 ---
 
