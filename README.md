@@ -2,7 +2,14 @@
 
 B.Tech Computer Science (AI & Data Science) · MIT-WPU, Pune · 2027  
 Building at the intersection of robotics, deep learning, and systems engineering.  
-Open to ML/AI research internships.
+Currently: Research Intern, CAIR (IIT Mandi) — RL-based quadruped locomotion. Open to ML/AI and robotics research internships from July 2027.
+
+---
+
+## Current
+
+### RL Quadruped Locomotion — CAIR, IIT Mandi
+Research internship (Jul–Dec 2026) under Dr. Akash Kumar, working toward a research paper. RL locomotion pipeline for the Hiwonder ROSpug quadruped: a Hopf-CPG-structured policy first trained in MuJoCo (PPO/LSTM), now ported to NVIDIA Isaac Lab for massively parallel GPU training (8,192 simultaneous environments via PhysX), with the sim-to-real path continuing on to physical deployment on Jetson hardware.
 
 ---
 
@@ -51,15 +58,15 @@ STM32 firmware in C for Team Vegapod. Custom Bluetooth bootloader, FreeRTOS BMS/
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![PyTorch Geometric](https://img.shields.io/badge/PyG-3C2179?style=flat&logo=pytorch&logoColor=white)
 ![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat&logo=ros&logoColor=white)
+![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat&logo=mujoco&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat&logo=gazebo&logoColor=white)
 ![PyBullet](https://img.shields.io/badge/PyBullet-346F9F?style=flat&logo=python&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=flat&logo=yolo&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-8CC84B?style=flat&logo=freertos&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-
----
 
 ---
 
