@@ -9,7 +9,7 @@ Currently: Research Intern, CAIR (IIT Mandi) — RL-based quadruped locomotion. 
 ## Current
 
 ### RL Quadruped Locomotion — CAIR, IIT Mandi
-Research internship (Jul–Dec 2026), working toward a research paper. RL locomotion pipeline for the Hiwonder ROSpug quadruped: a Hopf-CPG-structured policy first trained in MuJoCo (PPO/LSTM), now ported to NVIDIA Isaac Lab for massively parallel GPU training (8,192 simultaneous environments via PhysX), with the sim-to-real path continuing on to physical deployment on Jetson hardware.
+Research internship (Jul–Dec 2026), working toward a research paper. RL locomotion pipeline for the Hiwonder ROSpug quadruped: a Hopf-CPG-structured PPO policy, first trained in MuJoCo, now runs in NVIDIA Isaac Lab (Isaac Sim 6.0.1) at 8,192 parallel environments. A hardware-trained Actuator-Net and domain-randomization stages calibrated to measured servo characteristics bridge the sim-to-real gap. Latest checkpoint exported to ONNX, with hardware deployment to Jetson Nano in progress.
 
 ---
 
@@ -46,6 +46,8 @@ STM32 firmware in C for Team Vegapod. Custom Bluetooth bootloader, FreeRTOS BMS/
 
 ## Open Source
 
+**[isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab)** · Diagnosed a visualizer-configuration crash report back to a broken workspace install rather than a logic bug, then fixed the actual test debt it surfaced — stale `newton`→`newton_gl` alias assertions and a dead test for a CLI flag removed in 3.0. [PR #7533](https://github.com/isaac-sim/IsaacLab/pull/7533) merged September 2026, backported to `release/3.0.0`.
+
 **[metatensor/metatrain](https://github.com/metatensor/metatrain)** · Fixed zero-sized validation split edge case in ML training pipelines. [PR #1003](https://github.com/metatensor/metatrain/pull/1003) merged January 2026.
 
 ---
@@ -59,8 +61,10 @@ STM32 firmware in C for Team Vegapod. Custom Bluetooth bootloader, FreeRTOS BMS/
 ![PyTorch Geometric](https://img.shields.io/badge/PyG-3C2179?style=flat&logo=pytorch&logoColor=white)
 ![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat&logo=ros&logoColor=white)
 ![MuJoCo](https://img.shields.io/badge/MuJoCo-000000?style=flat&logo=mujoco&logoColor=white)
+![NVIDIA Isaac Sim](https://img.shields.io/badge/Isaac_Sim-76B900?style=flat&logo=nvidia&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat&logo=gazebo&logoColor=white)
 ![PyBullet](https://img.shields.io/badge/PyBullet-346F9F?style=flat&logo=python&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat&logo=onnx&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=flat&logo=yolo&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
