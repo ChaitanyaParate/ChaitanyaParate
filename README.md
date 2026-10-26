@@ -23,7 +23,7 @@ Developing a reinforcement-learning locomotion pipeline for the Hiwonder ROSpug 
 - Calibrated domain-randomization stages using measured servo characteristics to better represent the physical system.
 - Exported the latest policy checkpoint to ONNX. Jetson Nano deployment and hardware validation are in progress.
 
-Research paper in progress. Hardware deployment is not yet complete.
+Research paper in progress.
 
 ---
 
