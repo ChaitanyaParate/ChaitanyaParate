@@ -18,7 +18,7 @@ Building across AI/ML, robotics, deep learning, software systems, and embedded e
 
 Developing a reinforcement-learning locomotion pipeline for the Hiwonder ROSpug quadruped, with a focus on actuator-aware simulation and sim-to-real transfer.
 
-- Structured PPO policy using a Hopf Central Pattern Generator (CPG), initially trained in MuJoCo and now running in NVIDIA Isaac Lab (Isaac Sim 6.0.1) with 8,192 parallel environments.
+- Structured PPO policy using a Hopf Central Pattern Generator (CPG), initially trained in MuJoCo and now running in NVIDIA Isaac Lab (Isaac Sim 6.0.1).
 - Trained a data-driven Actuator-Net on measured servo-characterization data to model non-ideal actuator dynamics.
 - Calibrated domain-randomization stages using measured servo characteristics to better represent the physical system.
 - Exported the latest policy checkpoint to ONNX. Jetson Nano deployment and hardware validation are in progress.
