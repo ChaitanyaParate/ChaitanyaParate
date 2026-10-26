@@ -2,9 +2,11 @@
 
 **Robotics · Reinforcement Learning · Graph Neural Networks · Sim-to-Real Control**
 
-B.Tech in Computer Science and Engineering (AI & Data Science) · MIT-WPU, Pune · Expected 2027  
-Research Intern at CAIR, IIT Mandi · RL-based quadruped locomotion  
-Building at the intersection of robotics, deep learning, and systems engineering. Open to ML/AI and robotics research internships from January 2027.
+B.Tech Computer Science and Engineering (AI & Data Science) · MIT-WPU, Pune · Expected 2027
+
+Research Intern, CAIR, IIT Mandi · RL-based quadruped locomotion.
+
+Building across AI/ML, robotics, deep learning, software systems, and embedded engineering. Open to AI/ML, robotics, software, and embedded systems internships from January 2027.
 
 [LinkedIn](https://www.linkedin.com/in/chaitanyaparate) · [Email](mailto:paratechaitanya5@gmail.com) · [GitHub Repositories](https://github.com/ChaitanyaParate?tab=repositories)
 
@@ -33,8 +35,8 @@ Research paper in progress. Hardware deployment is not yet complete.
 
 Investigating zero-shot locomotion policy transfer across robot morphologies using a 31,582-parameter heterogeneous Graph Neural Network (GATv2Conv) trained with Proximal Policy Optimization (PPO). The system combines graph-based control with YOLOv8 perception and an on-device LLM planning layer, with ROS 2 Jazzy and Gazebo integration.
 
-- **Zero-shot quadruped-to-hexapod transfer:** Transferred a policy from a 12-DOF quadruped to an 18-DOF hexapod without retraining, obtaining a reward of `106 ± 25` and approximately 47 survival steps. The fixed-input-dimension MLP baseline could not run on the unseen morphology.
-- **Fine-tuning:** 500K additional steps increased reward from approximately `110` to `416 ± 114` and survival from 47 to 193 steps.
+- **Zero-shot quadruped-to-hexapod transfer:** Transferred a policy from a 12-DOF quadruped to an 18-DOF hexapod without retraining, obtaining a reward of 106 ± 25 and approximately 47 survival steps. The fixed-input-dimension MLP baseline could not run on the unseen morphology.
+- **Fine-tuning:** 500K additional steps increased reward from approximately 110 to 416 ± 114 and survival from 47 to 193 steps.
 - **Model size:** 31,582 parameters, approximately 85% fewer than the 210,457-parameter MLP baseline. The MLP achieves higher in-distribution reward, while the GNN supports variable graph structures.
 - **Terrain evaluation:** 95% success at a 5° slope and 0% at a 10° slope in the reported zero-shot terrain tests.
 - **Control and deployment:** Reported 200 Hz GNN inference with yaw-rate PI correction to address circular drift associated with HAA joint offsets.
